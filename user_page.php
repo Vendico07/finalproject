@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compaticble" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>admin page</title>
+        <title>user page</title>
 
         <!--custom css file link-->
         <link rel="stylesheet" href="style2.css">
@@ -15,9 +15,9 @@
 <div class="container">
 
     <div class="content">
-        <h3>Hi, <span>Admin</span></h3>
+        <h3>Hi, <span>user</span></h3>
         <h1>Welcome <span></span></h1>
-        <p>This is an admin page</p>
+        <p>This is an user page</p>
         <a href="login_form.php" class="btn">login</a>
         <a href="register_form.php" class="btn">register</a>
         <a href="logout.php" class="btn">logout</a>
