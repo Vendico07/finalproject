@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Dosis:wght@500&family=Poppins:wght@300&display=swap');
+
+* {
+	scroll-behavior: smooth;
+	font-family: "Poppins";
+}
+
+body {
+	background: #fff;
+	color: #444;
+	font-family: "Poppins";
+}
+
+.navbar-fixed-top{
+    height: 80px;
+    box-shadow: 0px 0px 30px rgb(127 137 161 / 30%);
+}
+
+.navbar-right{
+    background-color: #fff;
+}
+a{
+    padding-top: 10px;
+    font-size: 20px;
+    position: relative;
+    font-weight: 500;
+    padding: 10px 15px;
+    font-family: Poppins;
+    margin-top: 15px;
+}
+
+.clearfix{
+    display: grid;
+    margin-top: 10%;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.top-banner{
+    width: 100%;
+    background: url('image/intro.png') no-repeat right;
+    background-size: cover;
+    padding: 16.875rem 0 9.375rem;
+}
+
+.col-md-6{
+    background-color: #CACACA;
+}
+
+.counter-section{
+    background-color: #4a6267;
+    padding: 2.5rem 0;
+}
+.counter-section p{
+    color: #fff;
+    text-transform: uppercase;
+}
+
+h2{
+    color: #fff;
+}
+.about{
+    padding-top: 50px;
+}
+.about-section{
+    background: #fff;
+}
+.about-section .card,
+.about-section .card img{
+    border-radius: 0.625rem;
+}
+.about-section .text-sec{
+    padding-top: 200px;
+}
+
+.img-fluid{
+        max-width: 75%;
+        height: auto;
+}
+
+.main-btn{
+    padding: 6px 34.5px;
+    background-color: #4a6267; 
+    color: #fff;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    white-space: pre-wrap;
+    align-self: center;
+}
+
+.main-btn:hover {
+    padding: 6px 34.5px;
+    border-radius: 5px;
+    background-color: #56757b;
+    color: #fff;
+    border: none;
+    white-space: pre-wrap;
+    align-self: center;
+    box-shadow: #444;
+}
+
+.footer{
+    padding: 25px;
+    background: #4a6267;
+}
+.footer .footer-link{
+    font-size: 1rem;
+    color: #fff;
+    padding: 0 1.875rem;
+}
+.footer .footer-link a:hover{
+    color: #fff;
+}
+.footer a i{
+    font-size: 1.5rem;
+    color: #fff;
+    padding: 0 1 rem;
+}
+.footer p{
+    color: #fff;
+}
+
+.text-ketahui {
+    font-size: 18px;
+    color: #4a6267;
+    font-weight: 300;
+    }
+    
+    .text-next {
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.05em;
+    color: #4a6267;
+    }
+    
+    .card-zonasi {
+    box-shadow: 0px 4px 6px rgba(78, 78, 78, 0.25);
+    }
+
+    .news{
+        padding: 50px;
+    }
+
+.title-berita h1 {
+        font-family: "Poppins";
+        font-weight: bold !important;
+        font-size: 48px !important;
+        color: #333333;
+    }
+    
+    

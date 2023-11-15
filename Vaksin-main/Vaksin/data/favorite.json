@@ -1,0 +1,22 @@
+{
+    "favorite": [{
+        "Nama":"Vaksin Murah?",
+        "type": "Food",
+        "description":"Di 2022 ini sudah banyak yang menjual Vaksin dengan harga yang murah berikut adalah daftar...",
+        "img":"foto news.jpeg",
+        "link": "Home.html"
+    }, {
+        "Nama":"Suntik Buat Autism?",
+        "type": "Food",
+        "description":"Berikut kata bapak presiden ghufran Trippa tentang terhadap isunya...",
+        "img":"foto news 2.jpeg",
+        "link": "Home.html"
+    }
+    , {
+        "Nama":"Vaksin Murah?",
+        "type": "Food",
+        "description":"Di 2022 ini sudah banyak yang menjual Vaksin dengan harga yang murah berikut adalah daftar...",
+        "img":"foto news 3.jpeg",
+        "link": "Home.html"
+    }]
+    }

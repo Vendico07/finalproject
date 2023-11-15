@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contoh Load Data JSON</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <h1>Data </h1>
+    <div class="container">
+        <div class="title-box-featured">
+            <h2>Data List</h2>
+        </div>
+        <p id="data"></p>
+    </div>
+</body>
+<script src="jquery-3.4.1.js"></script>
+<script>
+    $.getJSON("data.json",function(data){
+        var items=[];
+        $.each(data, function(key, val){
+            items.push("<div class='col-md-4 text-center'>");
+            items.push("<a href=''><img src='foto/"+val.foto+"' style='height:100px;'></a>");
+            items.push("<div class='product-bottom text-center'>");
+            items.push("<h3>"+val.nama+"</h3>");
+            items.push("<h4>"+val.email+"</h4>");
+            items.push("<h4'>"+val.telp+"</h4>");
+            items.push("</div>");
+            items.push("</div>");
+        });
+        $("<p/>",{"class":"row",html:items.join("")}).appendTo("#data");
+    });
+</script>
+</html>

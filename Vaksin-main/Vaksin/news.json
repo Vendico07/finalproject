@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "judul" : "Situasi COVID-19 di Indonesia (Update per 16 Mei 2022)",
+        "tanggal" : "16 May 202",
+        "link" : "https://covid19.go.id/artikel/2022/05/16/situasi-covid-19-di-indonesia-update-16-mei-2022",
+        "foto" : "./image/Situasi.jpeg"
+    },
+    {
+        "id":"2",
+        "judul" : "MITOS: VAKSIN COVID-19 MENGANDUNG BAHAN-BAHAN YANG BERBAHAYA...)",
+        "tanggal" : "13 May 202",
+        "link" : "https://covid19.go.id/artikel/2022/05/14/mitos-menerima-vaksin-covid-19-dapat-membuat-kita-jadi-magnetis-faktanya",
+        "foto" : "./image/Mitos.jpeg"
+    },
+    {
+        "id":"3",
+        "judul" : "LEBIH DARI 406 JUTA VAKSIN COVID-19 SUDAH DITERIMA 199,3 JUT...",
+        "tanggal" : "11 May 202",
+        "link" : "https://covid19.go.id/artikel/2022/05/11/lebih-dari-406-juta-vaksin-covid-19-sudah-diterima-1993-juta-masyarakat-indonesia",
+        "foto" : "./image/jumlah.jpeg"
+    }
+]

@@ -1,0 +1,23 @@
+[
+    {
+        "id":"1",
+        "nama" : "Fachran Nazarullah",
+        "email" : "fachran.nazarullah@gmail.com",
+        "telp" : "085214320808",
+        "foto" : "fcn.jpg"
+    },
+    {
+        "id": "2",
+        "nama": "Aisyah Humairah",
+        "email": "aisyah.humairah31@gmail.com",
+        "telp": "-",
+        "foto": "Aisyah.png"
+    },
+    {
+        "id": "3",
+        "nama": "Khalif Aqmar Bilal",
+        "email": "-",
+        "telp": "-",
+        "foto": "Bilal.png"
+    }
+]
