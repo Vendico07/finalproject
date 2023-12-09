@@ -1,7 +1,7 @@
 <?php
 
 include_once 'config/Database.php';
-include_once 'class/Appointment.php';
+include_once 'class/Appointment copy.php';
 
 
 

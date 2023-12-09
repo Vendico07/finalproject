@@ -4,6 +4,7 @@ include_once 'config/Database.php';
 include_once 'class/User.php';
 include_once 'class/Appointment.php';
 include_once 'class/Patient.php';
+include_once 'class/Appointment copy.php';
 
 $database = new Database();
 $db = $database->getConnection();

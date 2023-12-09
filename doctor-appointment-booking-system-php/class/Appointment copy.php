@@ -68,7 +68,7 @@ class Appointment {
 			$rows[] = '<button type="button" name="view" id="'.$appointment["id"].'" class="btn btn-info btn-xs view"><span class="glyphicon glyphicon-file" title="View">View</span></button>';
 			if($_SESSION["role"] == 'admin' || $_SESSION["role"] == 'patient') { 
 				$rows[] = '<button type="button" name="update" id="'.$appointment["id"].'" class="btn btn-warning btn-xs update"><span class="glyphicon glyphicon-edit" title="Edit">Edit</span></button>';
-				$rows[] = '<button type="button" name="delete" id="'.$appointment["id"].'"';
+				$rows[] = '<button type="button" name="delete" id="'.$appointment["id"].'" class="btn btn-danger btn-xs delete" ><span class="glyphicon glyphicon-remove" title="Delete">Delete</span></button>';
 			} else {
 				$rows[] = '';
 				$rows[] = '';

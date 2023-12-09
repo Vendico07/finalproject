@@ -1,41 +1,42 @@
 <?php
 
 include_once 'config/Database.php';
-include_once 'class/User.php';
-include_once 'class/AppointmentUser.php';
-include_once 'class/Patient.php';
+include_once 'class/User copy.php';
+include_once 'class/Appointment Copy.php';
+
+include_once 'class/Patient copy.php';
 
 $database = new Database();
 $db = $database->getConnection();
 
 $user = new User($db);
 if(!$user->loggedIn()) {
-	header("Location: 	");
+	header("Location: index.php");
 }
 $appointment = new Appointment($db);
 $patient = new Patient($db);
 include('inc/header4.php');
 ?>
-<script src="js/appointment.js"></script>	
+<script src="js/appointment copy.js"></script>	
 </head>
 <body>
 	
 	<div class="container-fluid">
-	<?php include('top_menusUser.php'); ?>
+	<?php include('top_menus.php'); ?>
 		<div class="row row-offcanvas row-offcanvas-left">
 			
 			<div class="col-md-9 col-lg-10 main"> 
-			<h2>Manage Appointment</h2> 
+			<h2>Book Appointment</h2> 
 		<div class="panel-heading">
 			<div class="row">
 				<div class="col-md-10">
 					<h3 class="panel-title"></h3>
 				</div>
-				
+				<?php if($user->isAdmin()) { ?>
 				<div class="col-md-2" align="right">
 					<button type="button" id="createAppointment" class="btn btn-success" title="Create Appointment"><span class="glyphicon glyphicon-plus">Add</span></button>
 				</div>
-			
+				<?php } ?>
 			</div>
 		</div>
 		<table id="appointmentListing" class="table table-bordered table-striped">
@@ -44,7 +45,7 @@ include('inc/header4.php');
 					<th>#</th>
 					<th>Patient</th>
 					<th>Doctor</th>					
-					<th>Specialization</th>	
+					<th>Vaccine Type</th>	
 					<th>Fee</th>	
 					<th>Apointment Time</th>
 					<th>Apointment Date</th>
@@ -89,8 +90,8 @@ include('inc/header4.php');
 							</select>			
 						</div>
 						<div class="form-group">
-							<label for="specialization" class="control-label">Specialization</label>							
-							<select class="form-control" id="specialization" name="specialization"/>
+							<label for="specialization" class="control-label">Vaccine Type</label>							
+							<select class="form-control" id="Vaccine Type" name="Vaccine Type"/>
 							<?php 
 							$result = $appointment->specializationList();
 							while ($specialization = $result->fetch_assoc()) { 	
