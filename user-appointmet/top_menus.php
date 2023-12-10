@@ -5,16 +5,21 @@
     <div class="navbar-collapse collapse" id="collapsingNavbar">
       <ul class="navbar-nav">
         <li class="nav-item active">
-           <h2><a class="nav-link">Book Your Vaccine <span class="sr-only"></span></a></h2>
+           <h2><a class="nav-link" href="dashboard.php">Online Doctor Appointment System <span class="sr-only"></span></a></h2>
         </li>       
       </ul> 	  
 	  <ul class="navbar-nav ml-auto">
-	  <li class="nav-item">
-			  <a class="nav-link" href="http://127.0.0.1:5500/Vaksin-main/Vaksin/Tes.html">Back to Home</a> 
 		<?php if(!empty($_SESSION) && $_SESSION["userid"]) { ?>
 			<li class="nav-item">
-				
-			
+				<a class="nav-link"><?php echo ucfirst($_SESSION["name"]); ?> |</a>
+			</li>		
+			<li class="nav-item">
+			  <a class="nav-link" href="logout.php">Logout</a>         
+			</li>
+		<?php } else { ?>
+			<li class="nav-item">
+				  <a class="nav-link" href="index.php">Login</a>         
+			</li>
 		<?php } ?>
       </ul>	  
     </div>

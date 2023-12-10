@@ -5,7 +5,6 @@ include_once 'class/User.php';
 include_once 'class/Appointment.php';
 include_once 'class/Patient.php';
 
-
 $database = new Database();
 $db = $database->getConnection();
 
@@ -22,9 +21,9 @@ include('inc/header4.php');
 <body>
 	
 	<div class="container-fluid">
-	<?php include('top_menusUser.php'); ?>
+	<?php include('top_menus.php'); ?>
 		<div class="row row-offcanvas row-offcanvas-left">
-			
+			<?php include('left_menus.php'); ?>
 			<div class="col-md-9 col-lg-10 main"> 
 			<h2>Manage Appointment</h2> 
 		<div class="panel-heading">
@@ -44,8 +43,8 @@ include('inc/header4.php');
 				<tr>
 					<th>#</th>
 					<th>Patient</th>
-					<th>Hospital</th>					
-					<th>Vacine Type</th>	
+					<th>Doctor</th>					
+					<th>Specialization</th>	
 					<th>Fee</th>	
 					<th>Apointment Time</th>
 					<th>Apointment Date</th>
@@ -69,11 +68,17 @@ include('inc/header4.php');
     				<div class="modal-body">
 						<div class="form-group"
 							<label for="patient_name" class="control-label">Patient</label>
-							
-							<input type="text" class="form-control" id="patient_name" name="patient_name">			
+							<select class="form-control" id="patient_name" name="patient_name"/>
+							<?php 
+							$result = $patient->patientList();
+							while ($patients = $result->fetch_assoc()) { 	
+							?>
+								<option value="<?php echo $patients['id']; ?>"><?php echo $patients['name']; ?></option>							
+							<?php } ?>
+							</select>			
 						</div>
 						<div class="form-group"
-							<label for="doctor" class="control-label">Hospital</label>
+							<label for="doctor" class="control-label">Doctor</label>
 							<select class="form-control" id="doctor_name" name="doctor_name"/>
 							<?php 
 							$result = $appointment->doctorList();
@@ -84,7 +89,7 @@ include('inc/header4.php');
 							</select>			
 						</div>
 						<div class="form-group">
-							<label for="specialization" class="control-label">Vaccine Type</label>							
+							<label for="specialization" class="control-label">Specialization</label>							
 							<select class="form-control" id="specialization" name="specialization"/>
 							<?php 
 							$result = $appointment->specializationList();
@@ -142,11 +147,11 @@ include('inc/header4.php');
 						<span id="a_patient"></span>	
 					</div>
 					<div class="form-group">
-						<label for="p_gender" class="control-label">Hospital:</label>				
+						<label for="p_gender" class="control-label">Doctor:</label>				
 						<span id="a_doctor"></span>							
 					</div>	   	
 					<div class="form-group">
-						<label for="p_age" class="control-label">Vaccine Type:</label>							
+						<label for="p_age" class="control-label">Specialization:</label>							
 						<span id="a_special"></span>								
 					</div>	
 					<div class="form-group">
