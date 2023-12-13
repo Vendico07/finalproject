@@ -24,9 +24,9 @@ include('inc/header4.php');
 	<div class="container-fluid">
 	<?php include('top_menusUser.php'); ?>
 		<div class="row row-offcanvas row-offcanvas-left">
-			
+			<?php include('left_menus.php'); ?>
 			<div class="col-md-9 col-lg-10 main"> 
-			<h2>Manage Appointment</h2> 
+			<h2>Register Appointment Vacine</h2> 
 		<div class="panel-heading">
 			<div class="row">
 				<div class="col-md-10">
@@ -68,9 +68,15 @@ include('inc/header4.php');
     				</div>
     				<div class="modal-body">
 						<div class="form-group"
-							<label for="patient_name" class="control-label">Patient</label>
-							
-							<input type="text" class="form-control" id="patient_name" name="patient_name">			
+						<label for="patient_name" class="control-label">Patient</label>
+							<select class="form-control" id="patient_name" name="patient_name"/>
+							<?php 
+							$result = $patient->patientList();
+							while ($patients = $result->fetch_assoc()) { 	
+							?>
+								<option value="<?php echo $patients['id']; ?>"><?php echo $patients['name']; ?></option>							
+							<?php } ?>
+							</select>		
 						</div>
 						<div class="form-group"
 							<label for="doctor" class="control-label">Hospital</label>
@@ -94,10 +100,7 @@ include('inc/header4.php');
 							<?php } ?>
 							</select>								
 						</div>	  
-						<div class="form-group">
-							<label for="fee" class="control-label">Fee</label>							
-							<input type="text" class="form-control" id="fee" name="fee" placeholder="fee">							
-						</div>	   	
+					   	
 						<div class="form-group">
 							<label for="appointment_date" class="control-label">Appointment Date</label>							
 							<input type="date" class="form-control"  id="appointment_date" name="appointment_date" value="<?php echo date('d-m-Y'); ?>">					

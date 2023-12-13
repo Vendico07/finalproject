@@ -19,11 +19,11 @@ include('inc/header4.php');
 <body>
 	
 	<div class="container-fluid">
-	<?php include('top_menus.php'); ?>
+	<?php include('top_menusUser.php'); ?>
 		<div class="row row-offcanvas row-offcanvas-left">
 			<?php include('left_menus.php'); ?>
 			<div class="col-md-9 col-lg-10 main"> 
-			<h2>Manage Patient</h2> 
+			<h2>Register Patient Vacine</h2> 
 		<div class="panel-heading">
 			<div class="row">
 				<div class="col-md-10">

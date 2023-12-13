@@ -38,7 +38,7 @@ include('inc/header4.php');
                 <div class="rotate">
                   <i class="fa fa-user fa-5x"></i>
                 </div>
-                <h6 class="text-uppercase">Doctors</h6>
+                <h6 class="text-uppercase">Hospital</h6>
                 <h1 class="display-1"><a href="doctor.php"><?php echo $doctor->getTotalDoctor(); ?></a></h1>
               </div>
             </div> 
