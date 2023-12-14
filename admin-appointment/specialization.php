@@ -42,7 +42,7 @@ include('inc/header4.php');
 			<thead>
 				<tr>
 					<th>#</th>	
-					<th>Specialization</th>						
+					<th>Vaccine Type</th>						
 					<th></th>	
 					<th></th>					
 				</tr>
@@ -60,7 +60,7 @@ include('inc/header4.php');
     				</div>
     				<div class="modal-body">
 						<div class="form-group">
-							<label for="fee" class="control-label">Specialization</label>							
+							<label for="fee" class="control-label">Vaccine Type</label>							
 							<input type="text" class="form-control" id="specialization" name="specialization" placeholder="specialization">							
 						</div>													
     				</div>

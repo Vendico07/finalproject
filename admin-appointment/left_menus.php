@@ -6,7 +6,7 @@
 	<li class="nav-item"><a class="nav-link" href="patient.php"><strong>Patients</strong></a></li>
 	<li class="nav-item"><a class="nav-link" href="appointment.php"><strong>Appointments</strong></a></li>	
 	<li class="nav-item"><a class="nav-link" href="specialization.php"><strong>Vacine Type</strong></a></li>	
-	<li class="nav-item"><a class="nav-link" href="user.php"><strong>Admin Data</strong></a></li>	
+	<li class="nav-item"><a class="nav-link" href="user.php"><strong>Admin & User Data</strong></a></li>	
 	<li class="nav-item"><a class="nav-link" href="logout.php"><strong>Logout</strong></a></li>
 <?php } ?>
 </ul>

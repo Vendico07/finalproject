@@ -18,6 +18,7 @@ $doctor = new Doctor($db);
 $patient = new Patient($db);
 $appointment = new Appointment($db);
 include('inc/header4.php');
+
 ?>
 <title>Dashboard</title>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" />

@@ -152,10 +152,7 @@ include('inc/header4.php');
 						<label for="p_age" class="control-label">Vaccine Type:</label>							
 						<span id="a_special"></span>								
 					</div>	
-					<div class="form-group">
-						<label for="a_fee" class="control-label">Fee:</label>							
-						<span id="a_fee"></span>								
-					</div>	
+					
 					<div class="form-group">
 						<label for="phone" class="control-label">Appoint Date Time:</label>							
 						<span id="a_time"></span>					

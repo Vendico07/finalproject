@@ -15,6 +15,10 @@ if(!$user->loggedIn()) {
 $appointment = new Appointment($db);
 $patient = new Patient($db);
 include('inc/header4.php');
+
+
+
+
 ?>
 <script src="js/appointment.js"></script>	
 </head>
@@ -44,7 +48,7 @@ include('inc/header4.php');
 					<th>#</th>
 					<th>Patient</th>
 					<th>Doctor</th>					
-					<th>Specialization</th>	
+					<th>Vaccine Type</th>	
 					<th>Fee</th>	
 					<th>Apointment Time</th>
 					<th>Apointment Date</th>
@@ -89,7 +93,7 @@ include('inc/header4.php');
 							</select>			
 						</div>
 						<div class="form-group">
-							<label for="specialization" class="control-label">Specialization</label>							
+							<label for="specialization" class="control-label">Vaccine Type</label>							
 							<select class="form-control" id="specialization" name="specialization"/>
 							<?php 
 							$result = $appointment->specializationList();
@@ -99,10 +103,7 @@ include('inc/header4.php');
 							<?php } ?>
 							</select>								
 						</div>	  
-						<div class="form-group">
-							<label for="fee" class="control-label">Fee</label>							
-							<input type="text" class="form-control" id="fee" name="fee" placeholder="fee">							
-						</div>	   	
+						   	
 						<div class="form-group">
 							<label for="appointment_date" class="control-label">Appointment Date</label>							
 							<input type="date" class="form-control"  id="appointment_date" name="appointment_date" value="<?php echo date('d-m-Y'); ?>">					

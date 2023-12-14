@@ -55,11 +55,7 @@ include('inc/header4.php');
 						<input type="submit" name="login" value="Login" class="btn btn-success">
 					</div>	
 					
-					<p>
-					<strong>Admin User Login:</strong><br>
-					<strong>Email: </strong>adam@phpzag.com<br>
-					<strong>Password:</strong> 123<br><br>
-					</p>
+					
 					
 				</form>   
 			</div>    

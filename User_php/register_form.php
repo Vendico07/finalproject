@@ -4,13 +4,14 @@
 
 if(isset($_POST['submit'])){
 
-    $name = mysqli_real_escape_string($conn, $_POST['name']);
+    $first_name = mysqli_real_escape_string($conn, $_POST['first_name']);
+    $last_name = mysqli_real_escape_string($conn, $_POST['last_name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pass = md5($_POST['password']);
     $cpass = md5($_POST['cpassword']);
-    $user_type = $_POST['user_type'];
+    $role = $_POST['role'];
 
-    $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+    $select = "SELECT * FROM hms_users WHERE email = '$email' && password = '$pass' ";
 
     $result = mysqli_query($conn, $select);
 
@@ -23,7 +24,7 @@ if(isset($_POST['submit'])){
         if($pass != $cpass){
             $error[] = 'password not matched!';
         }else{
-            $insert = "INSERT INTO user_form(name, email, password, user_type) VALUES('$name','$email','$pass','$user_type')";
+            $insert = "INSERT INTO hms_users(first_name, last_name, email, password, role) VALUES('$name','','$email','$pass','$role')";
             mysqli_query($conn, $insert);
             header('location:login_form.php');
         }
@@ -59,13 +60,14 @@ if(isset($_POST['submit'])){
             };
         };
         ?>
-        <input type="text" name="name" required placeholder="enter your name">
+        <input type="text" name="first_name" required placeholder="enter your first name">
+        <input type="text" name="last_name" required placeholder="enter your last name">
         <input type="email" name="email" required placeholder="enter your email">
         <input type="password" name="password" required placeholder="enter your password">
         <input type="password" name="cpassword" required placeholder="confirm your password">
-        <select name="user_type">
+        <select name="role">
             <option value="user">user</option>
-            <option value="admin">admin</option>
+            
         </select>
         <input type="submit" name="submit" value="register now" class="form-btn">
         <p>already have an account? <a href="login_form.php">login now</a></p>

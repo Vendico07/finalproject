@@ -11,11 +11,6 @@
 	  <ul class="navbar-nav ml-auto">
 	  <li class="nav-item">
 			  <a class="nav-link" href="http://127.0.0.1:5500/Vaksin-main/Vaksin/Tes.html">Back to Home</a> 
-		<?php if(!empty($_SESSION) && $_SESSION["userid"]) { ?>
-			<li class="nav-item">
-				
-			
-		<?php } ?>
       </ul>	  
     </div>
   </nav>

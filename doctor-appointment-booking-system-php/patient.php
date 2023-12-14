@@ -13,6 +13,8 @@ if(!$user->loggedIn()) {
 	header("Location: index.php");
 }
 include('inc/header4.php');
+
+// print_r($_SESSION);
 ?>
 <script src="js/patient.js"></script>	
 </head>

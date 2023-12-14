@@ -24,7 +24,7 @@ include('inc/header4.php');
 		<div class="row row-offcanvas row-offcanvas-left">
 			<?php include('left_menus.php'); ?>
 			<div class="col-md-9 col-lg-10 main"> 
-			<h2>Manage Users</h2>
+			<h2>Manage Admin & User</h2>
 			<div class="panel-heading">
 				<div class="row">
 					<div class="col-md-10">

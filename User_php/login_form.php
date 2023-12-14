@@ -10,7 +10,7 @@ if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn, $_POST['email']);
     $pass = md5($_POST['password']);
     
-    $select = "SELECT * FROM user_form WHERE email = '$email' && password = '$pass' ";
+    $select = "SELECT * FROM hms_users WHERE email = '$email' && password = '$pass' ";
 
     $result = mysqli_query($conn, $select);
 
@@ -18,12 +18,12 @@ if(isset($_POST['submit'])){
 
         $row = mysqli_fetch_array($result);
 
-        if($row['user_type'] == 'admin'){
+        if($row['role'] == 'admin'){
 
             $_SESSION['admin_name'] = $row['name'];
             header('location:admin_page.php');
 
-        }elseif($row['user_type'] == 'user'){
+        }elseif($row['role'] == 'user'){
 
             $_SESSION['user_name'] = $row['name'];
             header('location:http://127.0.0.1:5500/Vaksin-main/Vaksin/Tes.html#home');

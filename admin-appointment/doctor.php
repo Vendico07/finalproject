@@ -44,7 +44,7 @@ include('inc/header4.php');
 					<th>Address</th>					
 					<th>Mobile</th>
 					<th>Fee</th>
-					<th>Specialization</th>	
+					<th>Vaccine Type</th>	
 					<th></th>
 					<th></th>	
 					<th></th>					
@@ -71,7 +71,7 @@ include('inc/header4.php');
 							<input type="text" class="form-control" id="fee" name="fee" placeholder="Fee">			
 						</div>	
 						<div class="form-group">
-							<label for="specialization" class="control-label">Specialization</label>
+							<label for="specialization" class="control-label">Vaccine Type</label>
 							<select class="form-control" id="specialization" name="specialization"/>
 							<?php 
 							$result = $appointment->specializationList();
